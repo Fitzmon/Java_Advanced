@@ -3,31 +3,41 @@ package dome;
 import java.util.ArrayList;
 
 public class Database {
-	private ArrayList<CD> listCD = new ArrayList<CD>();
-	private ArrayList<DVD> listDVD = new ArrayList<DVD>();
-	
-	public void add(CD cd) {
-		listCD.add(cd);
+	/* ä»£ç é‡å¤ */
+	// private ArrayList<CD> listCD = new ArrayList<CD>();
+	// private ArrayList<DVD> listDVD = new ArrayList<DVD>();
+	private ArrayList<Item> listItem = new ArrayList<Item>();
+
+	// public void add(CD cd) {
+	// listCD.add(cd);
+	// }
+	//
+	// public void add(DVD dvd) { // é‡è½½
+	// listDVD.add(dvd);
+	// }
+	public void add(Item item) {
+		listItem.add(item);
 	}
-	
-	public void add(DVD dvd) {   // ÖØÔØ
-		listDVD.add(dvd);
-	}
-	
+
 	public void list() {
-		for(CD cd: listCD) {
-			cd.print();
-		}
-		for(DVD dvd:listDVD) {
-			dvd.print();
+		// for (CD cd : listCD) {
+		// cd.print();
+		// }
+		// for (DVD dvd : listDVD) {
+		// dvd.print();
+		// }
+		for (Item item : listItem) {
+			item.print();
 		}
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Database db = new Database();
-		db.add(new CD("Stone Cafe", "Leah Dou", 11, 43, "Nice"));
-		db.add(new CD("³óÅ«¶ù", "²İ¶«Ã»ÓĞÅÉ¶Ô",12 , 0, "StreetVoice"));
+		db.add(new CD("Stone Cafe", "Leah Dou", 11, 43, "Gray Waters"));
+		db.add(new CD("ä¸‘å¥´å„¿", "è‰ä¸œæ²¡æœ‰æ´¾å¯¹", 12, 0, "StreetVoice"));
 		db.add(new DVD("Call Me by Your Name", "Luca Guadagnino", 0, "SonyClassic"));
+		db.add(new MP3("æš–æš–","æ¢é™èŒ¹",4,"äº²äº²"));
 		db.list();
 	}
 
