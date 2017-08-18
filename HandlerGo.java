@@ -9,4 +9,4 @@ public class HandlerGo extends Handler {
 		game.goRoom(word);
 	}
 
-}
+} 
