@@ -6,8 +6,8 @@ public class HandlerHelp extends Handler {
 	}
 	@Override
 	public void doCmd(String word) {
-		System.out.println("迷路了吗？你可以做的命令有：go bye help");
-		System.out.println("如：\tgo east");
+		System.out.println("杩疯矾浜嗗悧锛熶綘鍙互鍋氱殑鍛戒护鏈夛細go bye help");
+		System.out.println("濡傦細\tgo east");
 	}
 	
-}
+} 
