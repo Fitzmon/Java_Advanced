@@ -3,8 +3,8 @@ package castle;
 public class Handler {
 	protected Game game;
 	
-	// Handle±¾ÉíÊ²Ã´¶¼²»×ö£¬¶øÊÇ×öÒ»¸ö»ù´¡
-	// ºóÃæÉú³ÉgoHandler helpHandler byeHandlerµÈ
+	// Handleæœ¬èº«ä»€ä¹ˆéƒ½ä¸åšï¼Œè€Œæ˜¯åšä¸€ä¸ªåŸºç¡€
+	// åé¢ç”ŸæˆgoHandler helpHandler byeHandlerç­‰
 	public Handler(Game game) {
 		this.game = game;
 	}
@@ -13,4 +13,4 @@ public class Handler {
 	public boolean isBye() {
 		return false;
 	}
-}
+} 
