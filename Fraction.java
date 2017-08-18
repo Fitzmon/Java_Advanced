@@ -1,5 +1,3 @@
-package hello;
-
 import java.util.Scanner;
 
 public class Main {
@@ -23,7 +21,7 @@ class Fraction {
 	int fenzi;
 	int fenmu;
 
-	Fraction() {   // ÎŞ²Î¹¹Ôì
+	Fraction() {   // æ— å‚æ„é€ 
 		fenzi = 1;
 		fenmu = 1;
 	}
@@ -46,12 +44,12 @@ class Fraction {
 		return new Fraction(this.fenzi * r.fenzi,this.fenmu * r.fenmu);
 	}
 
-	/* »¯¼òÊä³ö */
+	/* åŒ–ç®€è¾“å‡º */
 	void print() {
 		int temp;
 		int x = fenzi;
 		int y = fenmu;
-		// Çó×î´ó¹«Ô¼Êı
+		// æ±‚æœ€å¤§å…¬çº¦æ•°
 		while (x != 0) {
 			temp = y % x;
 			y = x;
