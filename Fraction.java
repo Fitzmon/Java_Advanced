@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		Fraction a = new Fraction(in.nextInt(), in.nextInt());
@@ -49,7 +49,7 @@ class Fraction {
 		int temp;
 		int x = fenzi;
 		int y = fenmu;
-		// 求最大公约数
+		// 求出最大公约数
 		while (x != 0) {
 			temp = y % x;
 			y = x;
